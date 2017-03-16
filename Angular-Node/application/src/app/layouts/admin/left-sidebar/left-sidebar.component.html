@@ -1,0 +1,36 @@
+<div class="page-sidebar sidebar">
+	<div class="page-sidebar-inner slimscroll">
+		<div class="sidebar-header">
+			<div class="sidebar-profile">
+				<a href="javascript:void(0);" id="profile-menu-link">
+					<div class="sidebar-profile-image">
+						<img src="assets/images/profile-menu-image.png" class="img-circle img-responsive" alt="">
+					</div>
+					<div class="sidebar-profile-details">
+						<span>David Green<br><small>Art Director</small></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<ul class="menu accordion-menu">
+			<li [routerLinkActive]="['active']" [routerLink]="['/admin/dashboard']"><a class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
+			<li [routerLinkActive]="['active']" class="droplink"><a [routerLink]="['/admin/mlb']" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-briefcase"></span><p>MLB</p><span class="arrow"></span></a>
+				<ul class="sub-menu">
+					<li [routerLinkActive]="['active']" [routerLink]="['/admin/mlbplayers']"><a>Players</a></li>
+				</ul>
+			</li>
+			<li [routerLinkActive]="['active']" class="droplink"><a [routerLink]="['/admin/members']" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Members</p><span class="arrow"></span></a>
+				<ul class="sub-menu">
+					<li [routerLinkActive]="['active']" [routerLink]="['/admin/addmember']"><a>Add Member</a></li>
+				</ul>
+			</li>
+			<li [routerLinkActive]="['active']" class="droplink"><a [routerLink]="['/admin/pages']" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>CMS Pages</p><span class="arrow"></span></a>
+				<ul class="sub-menu">
+					<li [routerLinkActive]="['active']" [routerLink]="['/admin/addpage']"><a>Add Page</a></li>
+				</ul>
+			</li>
+			<li [routerLinkActive]="['active']"><a [routerLink]="['/admin/contests']" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Contests</p></a>
+			</li>
+		</ul>
+	</div><!-- Page Sidebar Inner -->
+	</div><!-- Page Sidebar -->
